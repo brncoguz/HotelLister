@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="rmz-Xz-Ooi">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Hotels View Controller-->
+        <scene sceneID="JgN-28-VAK">
+            <objects>
+                <tableViewController id="rmz-Xz-Ooi" customClass="HotelsViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="134" sectionHeaderHeight="22" sectionFooterHeight="22" id="m3y-ed-lem">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" rowHeight="134" id="FY9-ht-GWP">
+                                <rect key="frame" x="0.0" y="22" width="375" height="134"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="FY9-ht-GWP" id="7Jb-7G-8OC">
+                                    <frame key="frameInset" width="375" height="133.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" tag="1000" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lee-7T-2TG">
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="29" id="GVB-Cc-WAl"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <imageView userInteractionEnabled="NO" tag="1001" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Fa6-HA-e2h">
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="88" id="3Cr-qL-kdN"/>
+                                            </constraints>
+                                        </imageView>
+                                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" tag="1002" contentMode="scaleToFill" editable="NO" textAlignment="right" translatesAutoresizingMaskIntoConstraints="NO" id="jBS-Rx-99F">
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                        </textView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="Fa6-HA-e2h" firstAttribute="top" secondItem="Lee-7T-2TG" secondAttribute="bottom" constant="8" symbolic="YES" id="7fL-Zr-hZX"/>
+                                        <constraint firstItem="Lee-7T-2TG" firstAttribute="leading" secondItem="Fa6-HA-e2h" secondAttribute="leading" id="Abr-7F-9nu"/>
+                                        <constraint firstItem="jBS-Rx-99F" firstAttribute="leading" secondItem="Fa6-HA-e2h" secondAttribute="trailing" constant="8" symbolic="YES" id="FF2-jK-FeO"/>
+                                        <constraint firstItem="Lee-7T-2TG" firstAttribute="top" secondItem="7Jb-7G-8OC" secondAttribute="topMargin" id="NOv-9z-UoG"/>
+                                        <constraint firstItem="Lee-7T-2TG" firstAttribute="trailing" secondItem="jBS-Rx-99F" secondAttribute="trailing" id="O1J-Ob-9x2"/>
+                                        <constraint firstItem="Fa6-HA-e2h" firstAttribute="bottom" secondItem="jBS-Rx-99F" secondAttribute="bottom" id="WAH-d3-OuU"/>
+                                        <constraint firstItem="Fa6-HA-e2h" firstAttribute="top" secondItem="jBS-Rx-99F" secondAttribute="top" id="YDf-O6-Log"/>
+                                        <constraint firstItem="Lee-7T-2TG" firstAttribute="trailing" secondItem="7Jb-7G-8OC" secondAttribute="trailingMargin" id="bdU-i0-2xT"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="Fa6-HA-e2h" secondAttribute="bottom" constant="-1" id="dVZ-60-Pid"/>
+                                        <constraint firstItem="Lee-7T-2TG" firstAttribute="leading" secondItem="7Jb-7G-8OC" secondAttribute="leadingMargin" id="uMU-ro-o9U"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="rmz-Xz-Ooi" id="tOK-Vg-dlO"/>
+                            <outlet property="delegate" destination="rmz-Xz-Ooi" id="lOf-IT-QaE"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3Qc-Uj-N0E" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="744.79999999999995" y="502.39880059970017"/>
+        </scene>
+    </scenes>
+</document>
